@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineMedia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img src="https://static.vecteezy.com/ti/vecteur-libre/t1/12657549-illustration-bandes-de-rouleau-de-bobine-de-film-negatif-pour-logo-video-de-cinema-vectoriel.jpg">
         
         <nav>
-            <ul>
+            <ul class="nav_flex">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="ensalle.html">Encore en salle</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -18,17 +19,18 @@
         </nav>
     </header>
     <main>
-        <h1>Contact
+        <h1 class="h1">Contact
         </h1>
         <form>
-            <label for="nom">Nom :</label>
+            <label for="nom">Nom :</label><br>
             <input type="nom" id="nom" name="nom" required><br>
-            <label for="email">Adresse e-mail :</label>
+            <label for="email">Adresse e-mail :</label><br>
             <input type="email" id="email" name="email" required><br>
-            <textarea name="message" rows="6" cols="40" required></textarea><br>
+            <label for="message">Message :</label><br>
+            <textarea name="message" id="message" rows="6" cols="40" required></textarea><br>
             <button type="submit">Envoyer</button>
         </form>
     </main>
-    
+
 </body>
 </html>
