@@ -3,29 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    display:flex;
-    background-color: antiquewhite;
-    justify-content: center;
-    align-items: center;
+
+main {
+    position: relative;
 }
 
-header img {
-    height:70px;
+body {
+    background-color: antiquewhite ;
+}
+header {
+    display:flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
 }
 
 h1 {
     font-style: italic;
     margin: 30px 25px;
     text-align: center;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 20px 0px;
+    font-size: 28px;
 }
 
 div {
-    margin: 30px 25px;
+    margin: 20px 25px;
+}
+
+nav li {
+    width: 300px;
+}
+
+div ul {
+    list-style-type: none;
+}
+
+div img {
+    height: 450px;
+    width: 300px;
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+div li {
+    margin: 5px 0px;
+}
+
+a {
+    max-width: 300px;
 }
 
 a:link {
     text-decoration:none;
+    color: black;
 }
 
 a:visited {
@@ -35,11 +69,49 @@ a:visited {
 
 a:hover {
     font-weight: bold;
-    text-shadow: 1px 0 0 currentColor;
 }
 
 p {
     margin: 10px 0px;
+}
+
+/* p::first-letter {
+    font-size: 2em;
+} */
+
+/* li::before {
+    content: "blavla";
+} */
+
+.cards {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.seance {
+    position:absolute;
+    bottom: 10px;
+}
+
+.synopsis {
+    /* p:::first-letter: 2em; */
+    text-align: start;
+    width: 85%;
+    padding-bottom: 40px;;
+}
+
+.date_info {
+    text-align: start;
+    width: 85%;
+    margin: 0;
+    padding-top: 10px;
+    ;
 }
 
 .nav_flex {
@@ -53,22 +125,51 @@ p {
     padding: 12px 12px;
 }
 
-.nav_flex a:hover {
-    text-shadow: 1px 0 0 currentColor;
-}
-
 form {
-    width: 70%;
-    background-color: grey;
+    width: 60%;
+    background-color: antiquewhite;
     margin: auto;
-    padding: 10px
+    padding: 10px;
+    border-radius: 3px;
 }
 
-input{
-    width: 70%;
+label {
+    display: flex;
+    justify-content: center;
 }
 
 input, textarea {
-    margin: 10 0 10 0px;
-    background-color: antiquewhite;
+    display:flex;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 70%;
+    margin: auto;
 }
+
+button {
+    display:block;
+    margin:auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    border: 1px solid;
+}
+
+button[type="submit"]:hover {
+    background-color: black !important;
+    color: white;
+}
+/*
+button:hover {
+    background-color: black;
+    color: white;
+}
+*/
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
